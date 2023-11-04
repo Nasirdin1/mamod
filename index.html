@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamod Test</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="registration">
+      <form class="registration__form form">
+        <h1 class="form__title">Регистрация</h1>
+        <p class="form__text">Заполните Ваши данные</p>
+        <div class="form__container">
+          <label class="form__label">
+            <input class="form__input" type="text" placeholder="Имя" />
+          </label>
+          <label class="form__label">
+            <input class="form__input" type="email" placeholder="Email" />
+          </label>
+          <label class="form__none"></label>
+          <label class="form__label">
+            <input class="form__input" type="text" placeholder="Должность" />
+          </label>
+          <label class="form__label">
+            <input
+              class="form__input"
+              type="password"
+              placeholder="Пароль"
+              id="inputPassword"
+            />
+            <img
+              class="form__icon"
+              src="./src/icons/hided.svg"
+              alt="hided"
+              onclick="changeVis()"
+              id="img"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              class="form__input"
+              type="password"
+              placeholder="Повторите пароль"
+              id="inputConfirmPassword"
+            />
+            <img
+              class="form__icon"
+              src="./src/icons/hided.svg"
+              alt="hided"
+              onclick="changeVisConf()"
+              id="imgConf"
+            />
+          </label>
+        </div>
+
+        <div class="form__switch-block">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="switch__slider"></span>
+          </label>
+          <p class="form__switch-text">
+            Хотите чтобы Ваш профиль видели другие участники платформы?
+            <span
+              >Включает профиль для просмотра другими пользователями по
+              ссылке</span
+            >
+          </p>
+        </div>
+        <div class="form__block">
+          <div class="form__checkbox-block">
+            <label class="form__checkbox checkbox">
+              <input type="checkbox" />
+              <span class="checkbox__checkmark">
+                <img src="./src/icons/Vector.svg" alt="img" />
+              </span>
+            </label>
+            <p class="form__checkbox-text">
+              Регистрируясь, Вы соглашаетесь с
+              <span>политикой конфиденциальности</span> и обработкой
+              <span>персональных данных</span>
+            </p>
+          </div>
+          <button class="form__btn">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
